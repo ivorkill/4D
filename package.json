@@ -1,0 +1,24 @@
+{
+  "name": "4d",
+  "version": "1.0.0",
+  "description": "Project opdracht voor het 4D team om de Makey Makey's van de Eerste jaars te kunnen beoordelen via QR-codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivorkill/4D.git"
+  },
+  "author": "Sticky Motion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivorkill/4D/issues"
+  },
+  "homepage": "https://github.com/ivorkill/4D#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "qr-image": "^3.1.0",
+    "qrcode-reader": "^0.2.2"
+  }
+}
