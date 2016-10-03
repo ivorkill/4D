@@ -8,7 +8,7 @@
 	{
 ?>
 <?php
-    header("Location: ?action=register");
+    header("Location: ?action=register_teams");
 	}
 	else
 	{
