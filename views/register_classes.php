@@ -3,7 +3,12 @@
 	<table>
 		<tr>
 			<td>
-				<label for="class_name">Team Naam: <input type="text" name="class_name" placeholder="Class Naam...	"></label>
+				<label for="class_name">Klas: <input type="text" name="class_name" placeholder="Class Naam...	"></label>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="school"></label>
 			</td>
 		</tr>
 		<tr>
