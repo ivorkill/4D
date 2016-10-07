@@ -1,7 +1,9 @@
 <?php
 	// Declaring variables
 	$team_name = $mysqli->real_escape_string($_POST['team_name']);
-	$password = hash('sha512', $mysqli->real_escape_string($_POST['password']));
+	$description = $mysqli->real_escape_string($_POST['description']);
+	$team_members = $mysqli->real_escape_string($_POST['team_members']);
+	// $password = hash('sha512', $mysqli->real_escape_string($_POST['password']));
 	$code = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"), -10);
 
 	if($mysqli->query("INSERT INTO teams(team_name,password,code) VALUES('$team_name','$password','$code')"))

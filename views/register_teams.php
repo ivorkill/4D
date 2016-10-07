@@ -3,19 +3,19 @@
 	<table>
 		<tr>
 			<td>
-				<label for="team_name">Team Naam: <input type="text" name="team_name" placeholder="Team Naam...	"></label>
+				<label for="team_name">Team Naam: <input type="text" name="team_name" placeholder="Team Naam..."></label><br>
 			</td>
 		</tr>
-		<td>
-			<tr>
-				<label for="description">Descriptie: <textarea name="name" rows="8" cols="40"></textarea></label>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<label for="team_members">Team Leden: <input type="text" name="team_member" placeholder="Teamleden...."></label>
-			</tr>
-		</td>
+		<tr>
+			<td>
+				<label for="description">Descriptie: <input type="text" placeholder="Descriptie..."></input></label><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="team_members">Team Leden: <input type="text" name="team_members" placeholder="Teamleden..."></label><br>
+			</td>
+		</tr>
 		<tr>
 			<td>
 				<input type="submit" name="name" value="Send">
