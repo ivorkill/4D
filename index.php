@@ -2,6 +2,8 @@
 require_once 'config/config.php';
 require_once 'config/dbconnect.php';
 
+include 'views/head.html';
+
 $action = (empty($_GET['action'])) ? '' : $_GET['action'];
 switch ($action) {
 	case 'register_teams':
@@ -31,8 +33,12 @@ switch ($action) {
 	case 'select_classes':
 		require 'models/select_classes.php';
 		break;
+	case 'qr_gen';
+		require 'models/select_teams.php';
+		include 'views/generate_qr.php';
+		break;
 	default:
-		include 'views/home.php';
+		include 'views/home.html';
 		break;
 }
 ?>

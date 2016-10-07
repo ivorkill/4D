@@ -1,11 +1,11 @@
 <?php
-	$teams = array();
-
-	$sql = "SELECT * FROM teams JOIN schools ON teams.class_id = classes.id";
+	$sql = "SELECT * FROM teams";
 	$result = $mysqli->query($sql);
 	while ($items = $result->fetch_assoc()){
-		$teams = $items;
+		$team[] = $items;
 	}
 
-	return $teams;
+	return $team;
+
+
 ?>

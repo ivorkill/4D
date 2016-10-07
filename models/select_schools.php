@@ -4,7 +4,7 @@
 	$sql = "SELECT * FROM schools";
 	$result = $mysqli->query($sql);
 	while ($items = $result->fetch_assoc()){
-		$schools = $items;
+		$schools[] = $items;
 	}
 
 	return $schools;

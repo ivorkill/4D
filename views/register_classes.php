@@ -3,12 +3,14 @@
 	<table>
 		<tr>
 			<td>
-				<label for="class_name">Klas: <input type="text" name="class_name" placeholder="Class Naam...	"></label>
+				<label for="class_name">Klas: <input type="text" name="class_name" placeholder="Class Naam..."></label>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<label for="school"></label>
+				<label for="school">School: <select class="" name="">
+					<option value="">
+				</select></label>
 			</td>
 		</tr>
 		<tr>
