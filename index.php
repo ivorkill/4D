@@ -1,44 +1,45 @@
 <?php
+session_start();
+ob_start();
+//Requiring the database connection
 require_once 'config/config.php';
 require_once 'config/dbconnect.php';
 
+//Including the QR-generator
+include 'phpqrcode/qrlib.php';
+
+//Including the views
 include 'views/head.html';
 
+//Declaring the switch variable
 $action = (empty($_GET['action'])) ? '' : $_GET['action'];
+$name = (empty($_GET['name'])) ? '' : $_GET['name'];
 switch ($action) {
 	case 'register_teams':
-		include 'views/register_teams.php';
+		include 'views/register_form.php';
 		break;
-	case 'add _teams':
-		include 'models/add_teams.php';
-		break;
-	case 'select_teams':
-		require 'models/select_teams.php';
-		break;
-	case 'register_schools':
-		include 'views/register_schools.php';
-		break;
-	case 'add_schools':
-		include 'models/add_schools.php';
-		break;
-	case 'select_schools':
-		require 'models/select_schools.php';
-		break;
-	case 'register_classes':
-		include 'views/register_classes.php';
-		break;
-	case 'add_classes':
-		include 'models/add_classes.php';
-		break;
-	case 'select_classes':
-		require 'models/select_classes.php';
+	case 'add_teams':
+		include 'models/register_teams.php';
 		break;
 	case 'qr_gen';
-		require 'models/select_teams.php';
+		require 'models/team_qr.php';
 		include 'views/generate_qr.php';
 		break;
+	case 'login_teams':
+		include 'views/login_form.php';
+		break;
+	case 'login':
+		include 'models/login_teams.php';
+		break;
+	case 'account':
+		require 'models/select_teams.php';
+		include 'views/account.php';
+		break;
+	case 'logout':
+		include 'views/logout.php';
+		break;
 	default:
-		include 'views/home.html';
+		include 'views/home.php';
 		break;
 }
 ?>

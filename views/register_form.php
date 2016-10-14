@@ -8,12 +8,7 @@
 		</tr>
 		<tr>
 			<td>
-				<label for="description">Descriptie: <input type="text" placeholder="Descriptie..."></input></label><br>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label for="team_members">Team Leden: <input type="text" name="team_members" placeholder="Teamleden..."></label><br>
+				<label for="password">Wachtwoord: <input type="password" name="password" placeholder="Wachtwoord..."></label><br>
 			</td>
 		</tr>
 		<tr>
