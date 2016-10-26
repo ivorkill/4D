@@ -38,6 +38,12 @@ switch ($action) {
 	case 'logout':
 		include 'views/logout.php';
 		break;
+	case 'description_form':
+		include 'views/description_form.php';
+		break;
+	case 'change_description':
+		include 'models/change_description.php';
+		break;
 	default:
 		include 'views/home.php';
 		break;
