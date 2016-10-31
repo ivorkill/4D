@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+}
+html,body{
+	background-image:url(../img/bg.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+h2{
+	font-family:"Gasalt";
+	text-align: center;
+	font-size: 30px;
+	margin-top: 30px;
+}
+.text-field{
+	font-size: 20px;
+	font-family:"Gasalt";
+	margin: 10px auto;
+	display: block;
+	width: 228px;
+}
+select{
+	font-size: 20px;
+	font-family:"Gasalt";
+	margin: 30px auto;
+	display: block;
+	width: 228px;
+}
+.code{
+	font-size: 18px;
+	width: 228px;
+	border: #864cbf solid 1px;
+	border-radius: 5px;
+	height: 30px;
+}
+.logo{
+	background-color: #edf5f9;
+	background-size: 100%;
+	border-color: #864cbf;
+	border-style:dotted;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+.button{
+	background-color: #d6f440;
+	width: 250px;
+	height: 3.0em;
+	border-radius: 5px;
+	border-style: none;
+	font-size: 20px;
+	font-family:"neuropol x rg";
+	z-index: 100;
+	margin: 0 auto;
+	position: relative;
+}
+.button:hover{
+	background-color: #864cbf;
+	color: #ffffff;
+	cursor: pointer;
+}
+.pixels{
+	position: fixed;
+	overflow: hidden;
+	bottom:0;
+	right:0;
+	padding:0;
+	z-index: 20;
+
+}
+p{
+	font-family:"Gasalt";
+	font-weight: 800;
+	font-size: 20px;
+}
+.qr{
+	margin: 0 auto;
+	display: block;
+}
+.text1{
+	font-size: 16px;
+	width: 228px;
+	margin: 0 auto;
+	padding-top: 5px;
+	z-index: 100;
+	position: relative;
+}
+.rate{
+	text-align: center;
+	padding-top: 3.5px;
+	width: 250px;
+	height: 50px;
+	margin: auto;
+}
+.left-div
+{
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  padding: 100px;
+  background-color: #fff;
+  margin: 15px;
+  vertical-align: top;
+  z-index: 200;
+}
+.right-div
+{
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  padding: 100px;
+  background-color: #fff;
+  margin: 15px;
+  text-align: center;
+  z-index: 200;
+}
+.kader{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 80px;
+	max-width: 800px;
+	position: absolute;
+	z-index:200;
+}
+.stars{
+	width:50px;
+	height: 50px;
+	background-image: url(../img/noStar.png);
+	background-size: cover;
+	float: left;
+}
+.container{
+	text-align: center;
+}
+.star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+  opacity: 1;
+}
+
+.star-rating i ~ i {
+  width: 40%;
+}
+.star-rating i ~ i ~ i {
+  width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px)
+{
+  .left-div, .right-div
+    {
+       max-width: 100%;
+    }
+}
+
+/*---- mobile design ----*/
+@media (min-width: 325px){
+	.logo{
+		text-align: center;
+	}
+	.rate{
+		margin-top: 35px;
+	}
+	.button1 {
+		text-align: center;
+		margin-top: 5%;
+		z-index: -1;
+	}
+	.text{
+		text-align: center;
+		margin-top: 35%;
+	}
+	body{
+		background-image:url(../img/bg.png);
+	}
+}

@@ -1,0 +1,34 @@
+	<body>
+		<div class="container">
+			<div class="logo">
+		    	<img src="Mobile-views/img/logo_quickrate.png" alt="logo Quick Rate" title="logo Quick Rate" height="60" />
+		  </div>
+			<select></select>
+				<canvas class="qr"></canvas>
+			<form method="post">
+				<div class="text-field">
+					Of vul hier de code in:
+					<input type="text" placeholder="Code" name="Code" class="code" required="" maxlength="10">
+				</div>
+				<div class="button1">
+					<input type="submit" value="Beoordelen" name="page" class="button">
+				</div>
+			</form>
+				<img src="Mobile-views/img/pixels.png" alt="pixels" title="pixels" height="250" class="pixels"/>
+		</div>
+		<script type="text/javascript" src="Mobile-views/js/qrcodelib.js"></script>
+		<script type="text/javascript" src="Mobile-views/js/webcodecamjs.js"></script>
+		<script type="text/javascript">
+			var txt = "innerText" in HTMLElement.prototype ? "innerText" : "textContent";
+				var arg = {
+						resultFunction: function(result) {
+							var test = document.getElementsByClassName('code')[0].value = result.code;
+						}
+				};
+				var decoder = new WebCodeCamJS("canvas").buildSelectMenu('select', 'environment|back').init(arg).play();
+
+				document.querySelector('select').addEventListener('change', function(){
+					decoder.stop().play();
+				});
+		</script>
+	</body>
