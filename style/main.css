@@ -1,0 +1,17 @@
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+#team_members p{
+	font-size: 12px;
+	margin-bottom: -20px;
+	margin-top: 0px;
+}
+.qr_code{
+	float: left;
+}
+.description{
+	float: right;
+	text-align: center;
+}
