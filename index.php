@@ -16,8 +16,13 @@ include 'views/head.html';
 //Declaring the switch variable
 $action = (empty($_GET['action'])) ? '' : $_GET['action'];
 $page = (empty($_POST['page'])) ? '' : $_POST['page'];
+$name = (empty($_GET['name'])) ? '' : $_GET['name'];
 
 if ( $detect->isMobile() ) {
+	if (!isset($_COOKIE['UserID'])) {
+		$code = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"), -10);
+		setcookie("UserID",$code,time()+(86400 * 30));
+	}
 	include 'Mobile-views/head.html';
 	switch ($page) {
 		case 'Scannen':

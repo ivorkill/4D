@@ -7,25 +7,27 @@
 $rate = (empty($_POST['rating'])) ? '' : $_POST['rating'];
 $id = (empty($_POST['id'])) ? '' : $_POST['id'];
 if ($rate > 0 && $rate < 6) {
-  if ($_SERVER['REMOTE_ADDR']>1){
-    $ip = str_replace(".","",$_SERVER['REMOTE_ADDR']);
-  }
-  else {
-    $ip = 1;
-  }
-  $votes =  $mysqli->query("SELECT * FROM votes WHERE ip_address = $ip AND team_id = $id")->fetch_assoc();
-  if($votes)
-  {
-    echo "Je hebt al gestemt kut";
-  }
-  else {
-    if($mysqli->query("INSERT INTO votes(vote,ip_address,team_id) VALUES('$rate','$ip','".$id."')")){
-      echo "Er is succesvol gestemt.";
-    }
-    else{
-      echo "Er is iets fout gegaan";
-    }
-  }
+	if(isset($_COOKIE['UserID']))
+	{
+		$UserID = $_COOKIE['UserID'];
+		$sql = "SELECT * FROM votes WHERE ip_address = '$UserID' AND team_id = '$id'";
+		$votes =  $mysqli->query($sql)->fetch_assoc();
+	  if($votes)
+	  {
+	    echo "<form method='post'><h2>Je hebt al gestemt.</h2><br><p>Druk op de knop om terug te gaan.</p><br><input type='hidden' name='page' value='Scannen'><div class='button1'><input class='button' type='submit' value='Terug'></div></form>";
+		}
+	  else {
+	    if($mysqli->query("INSERT INTO votes(vote,ip_address,team_id) VALUES('$rate','$UserID','".$id."')")){
+				echo "<form method='post'><h2>Je hebt nu gestemt.</h2><br><p>Druk op de knop om een ander project te scannen.</p><br><input type='hidden' name='page' value='Scannen'><div class='button1'><input class='button' type='submit' value='Terug'></div></form>";
+	    }
+	    else{
+				echo "<form method='post'><h2>Er is iets fout gegaan.</h2><br><p>Druk op de knop om terug te gaan.</p><br><input type='hidden' name='page' value='Scannen'><div class='button1'><input class='button' type='submit' value='Terug'></div></form>";
+	    }
+	  }
+	}
+	else {
+		echo "<form method='post'><h2>Er is iets fout gegaan.</h2><br><p>Druk op de knop om terug te gaan.</p><br><input type='hidden' name='page' value='Scannen'><div class='button1'><input class='button' type='submit' value='Terug'></div></form>";
+	}
 }
 else {
   echo "Your vote was not from 1-5 please try again.";
