@@ -4,24 +4,38 @@
 	header("Location: ?action=home");
 	exit;
 	}
+
 ?>
+<div class="logo">
+        <img src="img/logo_quickrate.png" alt"logo" width="30%">
+        </div>
 <div class="content">
 	<div class="container">
 		<?php
 			foreach ($team as $team_list){
+				$team_name = $team_list['team_name'];
 				$team_id = $team_list['id'];
 				$qr_code = $team_list['qr_name'];
+				$team_img = $team_list['team_img'];
 				$description = $team_list['description'];
+				$team_members_array = explode(',', $team_list['team_members']);
+				echo "<h2>".$team_name."</h2>";
+				foreach($team_members_array as $team_members){
+					echo "<h3>".$team_members."</h3>";
+				}
 				echo "<div class='description'>";
-				echo $description;
-				echo "<a href='?action=description_form'>Change description</a>";
+				echo $description."<br>";
+				echo "<a href='?action=description_form'>Pas hier de tekst aan</a>";
 				echo "</div>";
 				echo "<div class='qr-code'>";
-				echo "<img src='img/".$qr_code."'/>";
+				echo "<img src='".$team_img."'/>";
+				echo "<button class='homeaccount'><a href='?action=img_upload_form'>Pas foto aan</a></button>";
 				echo "</div>";
-				echo "<a href='?action=home'>Home</a>";
+				echo "<button class='homeaccount'><a href='?action=home'>Home</a></button>";
 			}
 		?>
 
 	</div>
 </div>
+
+<img src="img/pixels.png" alt"pixels" class="pixels" width="300px">

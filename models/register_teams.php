@@ -5,6 +5,7 @@
 	$qr_name = $team_name.'.png';
 	$password = hash('sha512', $mysqli->real_escape_string($_POST['password']));
 	$code = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"), -10);
+	$description = $mysqli->real_escape_string($_POST['description']);
 
 	//Generating QR-code
 	QRcode::png(''.$code.'', 'img/'.$qr_name, 'L', 14, 2);

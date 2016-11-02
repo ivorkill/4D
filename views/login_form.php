@@ -5,17 +5,22 @@ header("Location: ?action=account");
 exit;
 }
 ?>
+
+<div class="logo">
+        <img src="img/logo_quickrate.png" alt"logo" width="30%">
+        </div>
+
 <!-- The login to add the teams -->
 <form class="login_team" action="?action=login" method="post">
 	<table>
 		<tr>
 			<td>
-				<label for="team_name">Team Naam: <input type="text" name="team_name" placeholder="Team Naam..." autofocus></label><br>
+                <label for="team_name"><p class="label">Team Naam:</p> <input class="input" type="text" name="team_name" autofocus></label><br>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<label for="password">Wachtwoord: <input type="password" name="password" placeholder="Wachtwoord..."></label><br>
+                <label for="password"><p class="label">Wachtwoord:</p> <input class="input" type="password" name="password" ></label><br>
 			</td>
 		</tr>
 		<tr>
@@ -25,3 +30,5 @@ exit;
 		</tr>
 	</table>
 </form>
+
+<img src="img/pixels.png" alt"pixels" class="pixels" width="300px">

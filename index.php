@@ -44,6 +44,16 @@ switch ($action) {
 	case 'change_description':
 		include 'models/change_description.php';
 		break;
+	case 'img_upload_form':
+		include 'views/upload_image_form.php';
+		break;
+	case 'img_upload':
+		include 'models/upload_img.php';
+		break;
+	case 'show_qr':
+		require 'models/select_teams.php';
+		include 'views/show_qr.php';
+		break;
 	default:
 		include 'views/home.php';
 		break;
