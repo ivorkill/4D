@@ -5,11 +5,6 @@ header("Location: ?action=account");
 exit;
 }
 ?>
-
-<div class="logo">
-        <img src="img/logo_quickrate.png" alt"logo" width="30%">
-        </div>
-
 <!-- The login to add the teams -->
 <form class="login_team" action="?action=login" method="post">
 	<table>

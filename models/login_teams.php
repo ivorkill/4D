@@ -11,11 +11,9 @@
 		}
 		else
 		{
-			?>
-			<script>
-				windows.alert("Failed to login!");
-			</script>
-			<?php
+			// echo "Incorrect team name and/or password";
+			// echo "<a href='?action=home'>Go back</a>";
+			header("Location:?action=home");
 		}
 	}
 ?>

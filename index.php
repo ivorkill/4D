@@ -43,6 +43,7 @@ if ( $detect->isMobile() ) {
 	}
 }
 else {
+	include 'views/header.html';
 	switch ($action) {
 		case 'register_teams':
 			include 'views/register_form.php';

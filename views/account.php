@@ -6,9 +6,6 @@
 	}
 
 ?>
-<div class="logo">
-        <img src="img/logo_quickrate.png" alt"logo" width="30%">
-        </div>
 <div class="content">
 	<div class="container">
 		<?php
