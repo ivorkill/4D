@@ -1,7 +1,7 @@
 <!-- The register to add the teams -->
 <div class="logo">
-        <img src="img/logo_quickrate.png" alt"logo" width="30%">
-        </div>
+    <img src="img/logo_quickrate.png" alt"logo" width="30%">
+</div>
 
 <form class="register_team" action="?action=add_teams" method="post">
 	<table>
@@ -24,7 +24,7 @@
 		</tr>
 		<tr>
 			<td>
-<input type="submit" name="name" value="Send">
+				<input type="submit" name="name" value="Send">
 			</td>
 		</tr>
 	</table>
