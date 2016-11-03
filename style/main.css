@@ -19,7 +19,7 @@ li{
     margin-top: 15%;
 }
 
-	
+
 #team_members p{
 	font-size: 12px;
 	margin-bottom: -20px;
@@ -68,8 +68,6 @@ h2{
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
-    margin-bottom: -39px;
-    text-decoration: overline;
 }
 .logo{
     background-color: #edf5f9;
@@ -97,7 +95,7 @@ margin-left: 10px;
 margin-bottom: 5px;
 font-family:"Gasalt";
 font-size: 25px;
-    
+
 }
 
 button {
@@ -226,7 +224,7 @@ input[type="submit"] {
     font-size: 20px;
     z-index: 100;
     margin: 0 auto;
-    position: relative; 
+    position: relative;
     margin-top: 5px;
     font-family:"neuropol x rg";
 }
@@ -245,7 +243,7 @@ input[type="submit"]:hover{
 
 /*---- mobile design ----*/
 @media (min-width: 325px){
-    
+
 .logo{
     text-align: center;
 }
