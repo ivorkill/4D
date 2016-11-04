@@ -6,6 +6,7 @@
 	while ($login = $result->fetch_array()) {
 		if($count==1)
 		{
+			// make the user session equal to the id of the team
 			$_SESSION['user'] = $login['id'];
 			header("Location:?action=account");
 		}
@@ -17,3 +18,4 @@
 		}
 	}
 ?>
+7
