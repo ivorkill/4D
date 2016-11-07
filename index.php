@@ -43,6 +43,7 @@ if ( $detect->isMobile() ) {
 	}
 }
 else {
+	include 'views/header.html';
 	switch ($action) {
 		case 'register_teams':
 			include 'views/register_form.php';
@@ -82,6 +83,9 @@ else {
 		case 'show_qr':
 			require 'models/select_teams.php';
 			include 'views/show_qr.php';
+			break;
+		case 'scoreboard':
+			include 'views/scoreboard.html';
 			break;
 		default:
 			include 'views/home.php';

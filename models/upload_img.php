@@ -2,8 +2,8 @@
 if(isset($_FILES['image'])) {
     $errors     = array();
     $maxsize    = 2097152;
-	$needheight = 1000;
-	$needwidth = 1000;
+	$needheight = 800;
+	$needwidth = 800;
 	$id = $_SESSION['user'];
 	$file= $_FILES['image']['tmp_name'];
 	$filename= $_FILES['image']['name'];

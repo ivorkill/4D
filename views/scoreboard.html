@@ -1,0 +1,29 @@
+<body>
+  <div id="leaderboard">
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript">
+  function ajax(){
+    $.ajax({
+          url: 'models/ajax.php',
+          type: "get", cache:false,
+          dataType: 'json',
+          success: function(ranks)
+          {
+              ranks.sort(compareNumbers);
+                $("#leaderboard").html(ranks[0].rating +"<br>"+ ranks[1].rating);
+
+          },
+          error: function()
+          {
+              alert("Foutje");
+          }
+      });
+      setTimeout(ajax,3000);
+    }
+    function compareNumbers(a, b) {
+      return b.rating - a.rating;
+    }
+    ajax();
+  </script>
+</body>

@@ -1,8 +1,4 @@
 <!-- The register to add the teams -->
-<div class="logo">
-    <img src="img/logo_quickrate.png" alt"logo" width="30%">
-</div>
-
 <form class="register_team" action="?action=add_teams" method="post">
 	<table>
 		<tr>
