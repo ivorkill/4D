@@ -84,6 +84,9 @@ else {
 			require 'models/select_teams.php';
 			include 'views/show_qr.php';
 			break;
+		case 'scoreboard':
+			include 'views/scoreboard.html';
+			break;
 		default:
 			include 'views/home.php';
 			break;
