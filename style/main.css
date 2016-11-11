@@ -60,7 +60,7 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 h2{
@@ -68,17 +68,11 @@ h2{
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
-    margin-bottom: -39px;
-    text-decoration: overline;
 }
 .logo{
     background-color: #edf5f9;
-    background-size: 100%;
-    border-color: #864cbf;
-    border-style:dotted;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+		height: 100px;
+    border-bottom:dotted #864cbf;
 }
 
 a {
@@ -193,6 +187,58 @@ p{
     max-width: 800px;
     z-index:200;
 }
+
+.h1{
+    margin:auto;
+    margin-top:-80px;
+    padding:15px;
+    background-color:#d6f440;
+    color:black;
+    font-family: 'Neuropol-X-Free';
+    width:20%;
+    font-size:28px;
+    text-align: center;
+    border:dashed purple 2px;
+    z-index: 2;
+}
+.pixelscore{
+    /*background-image: url(../img/Pixels.png);*/
+    background-size:100% 100%;
+    background-position: center;
+    background-attachment:local;
+    margin: 50px auto;
+    background-color: #edf5f9;
+    border:dashed #864bdf 2px;
+    padding-top:60px;
+    height:500px;
+    width:100%;
+		max-width: 700px;
+    z-index:-1;
+}
+.leaderboard td{
+    font-size: 30px;
+    width:5%;
+    height:98px;
+    font-family:"Gasalt";
+    text-align:center;
+    border-bottom: dashed #864bdf 2px;
+    border-width:2px;
+}
+.leaderboard{
+    margin:0 auto;
+    width:90%;
+}
+.num5 td{
+	border-style: none;
+}
+
+.leaderboard .stars{
+	width:30px;
+	height: 30px;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+	background-size: cover;
+	float: left;
+}
 @media screen and (max-width: 600px)
 {
   .left-div, .right-div
@@ -263,8 +309,4 @@ input[type="submit"]:hover{
 .text{
     text-align: center;
     margin-top: 35%;
-}
-body{
-    background-image:url(../img/bg.png);
-}
 }

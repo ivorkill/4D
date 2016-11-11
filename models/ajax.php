@@ -1,6 +1,7 @@
 <?php
   $data = array();
-  $mysqli = new mysqli('localhost','root','','4d');
+  include '../config/config.php';
+  include '../config/dbconnect.php';
 	$sql = "SELECT team_id, team_name, AVG(vote) AS rating
           FROM votes
           JOIN teams ON votes.team_id = teams.id

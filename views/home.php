@@ -25,6 +25,13 @@
 						</button>
 					</a>
 				</li>
+				<li>
+					<a href="?action=scoreboard">
+						<button class="center">
+							Scoreboard
+						</button>
+					</a>
+				</li>
 			<?php
 			}
 			?>

@@ -1,5 +1,8 @@
 <body>
-  <div id="leaderboard">
+  <div class="pixelscore">
+    <div class="h1">Leaderboard</div>
+    <table class="leaderboard">
+    </table>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script type="text/javascript">
@@ -10,9 +13,18 @@
           dataType: 'json',
           success: function(ranks)
           {
+            var rates;
               ranks.sort(compareNumbers);
-                $("#leaderboard").html(ranks[0].rating +"<br>"+ ranks[1].rating);
-
+              $(".leaderboard").html("");
+              for (var i = 0; i < ranks.length; i++) {
+                if(ranks[i].rating < 6 && ranks[i].rating > 0 ){
+                  $(".leaderboard").append("<tr class='num"+(i+1)+"'> <td>"+(i+1)+"</td><td>"+ranks[i].team_name+"</td><td class='rating"+(i+1)+"'></td> </tr>");
+                  for(f=0;f<ranks[i].rating;f++)
+                  {
+                    $(".rating"+(i+1)+"").append("<i class='stars'></i>");
+                  }
+                }
+              }
           },
           error: function()
           {
