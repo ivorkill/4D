@@ -22,7 +22,7 @@
 				}
 				echo "<div class='description'>";
 				echo $description."<br>";
-				echo "<a href='?action=description_form'>Pas hier de tekst aan</a>";
+				echo "<button class='homeaccount'><a href='?action=description_form'>Pas hier de tekst aan</a></button>";
 				echo "</div>";
 				echo "<div class='qr-code'>";
 				echo "<img src='".$team_img."'/>";
