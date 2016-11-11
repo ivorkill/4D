@@ -19,14 +19,14 @@
 			{
 ?>
 <?php
-				echo "<a href='?action=qr_gen&name=".$team_name."'>Je QR-code</a>";
+				echo "<button class='center'><a href='?action=qr_gen&name=".$team_name."'>Je QR-code</a></button>";
 			}
 			else
 			{
 ?>
 			    <script>alert('error while registering you...');</script>
 			<?php
-				echo "<a href='?action=register_teams'>Go back</a>";
+				echo "<button class='center'><a href='?action=register_teams'>Go back</a></button>";
 			}
 		}
 	}

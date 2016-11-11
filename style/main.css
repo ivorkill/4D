@@ -81,6 +81,10 @@ h2{
     border-left: none;
 }
 
+.register_qr{
+	text-align: center;
+}
+
 a {
     font-family:"neuropol x rg", "Gasalt";
     text-decoration: none;
