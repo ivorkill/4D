@@ -12,24 +12,23 @@
 			else{
 			?>
         <li>
-						<a href="?action=register_teams">
-							<button class="center">
+						<a class="betterbutton"  href="?action=register_teams">
+
 								Register
-							</button>
+
 						</a>
 				</li>
       	<li>
-					<a href="?action=login_teams">
-						<button class="center">
+					<a class="betterbutton"  href="?action=login_teams">
+
 							Login
-						</button>
+
 					</a>
 				</li>
 				<li>
-					<a href="?action=scoreboard">
-						<button class="center">
+					<a class="betterbutton" href="?action=scoreboard">
 							Scoreboard
-						</button>
+
 					</a>
 				</li>
 			<?php

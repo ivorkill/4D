@@ -12,21 +12,21 @@
 		$get_rows = $sql->num_rows;
 		if($get_rows >= 1){
 			echo "Team exists already";
-			echo "<a href='?action=register_teams'>Go back</a>";
+			echo "<a class='betterbutton' href='?action=register_teams'>Go back</a>";
 		}
 		else{
 			if($mysqli->query("INSERT INTO teams(team_name,team_members,code,qr_name,password) VALUES('$team_name','$team_members','$code','$qr_name','$password')"))
 			{
 ?>
 <?php
-				echo "<button class='center'><a href='?action=qr_gen&name=".$team_name."'>Je QR-code</a></button>";
+				echo "<a class='betterbutton' href='?action=qr_gen&name=".$team_name."'>Je QR-code</a>";
 			}
 			else
 			{
 ?>
 			    <script>alert('error while registering you...');</script>
 			<?php
-				echo "<button class='center'><a href='?action=register_teams'>Go back</a></button>";
+				echo "<a class='betterbutton' href='?action=register_teams'>Go back</a>";
 			}
 		}
 	}

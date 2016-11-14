@@ -11,7 +11,7 @@
 			}
 		?>
 		</div>
-		<button class="center"><a href="?action=login_teams">Login</a></button><br>
-		<button class="center"><a href="?action=home">Home</a></button>
+		<a class="betterbutton" href="?action=login_teams">Login</a><br>
+		<a class="betterbutton" href="?action=home">Home</a>
 	</div>
 </div>

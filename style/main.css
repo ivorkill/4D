@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Neuropol-X-Free';
+    src:url('../font/Neuropol-X-Free.ttf.woff') format('woff'),
+        url('../font/Neuropol-X-Free.ttf.svg#Neuropol-X-Free') format('svg'),
+        url('../font/Neuropol-X-Free.ttf.eot'),
+        url('../font/Neuropol-X-Free.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gasalt';
+    src:url('../font/Gasalt-Black.ttf');
+		font-weight: normal;
+    font-style: normal;
+	}
+
 html{
 	width: 100%;
 	height: 100%;
@@ -16,7 +33,7 @@ li{
 }
 
 .top {
-    margin-top: 15%;
+    margin-top: 150px;
 }
 
 
@@ -54,13 +71,13 @@ li{
 }
 html,body{
     background-image: url(../img/bg_desktop.png);
-    background-size: cover;
+    /*background-size: cover;*/
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 h2{
@@ -80,10 +97,10 @@ h2{
 }
 
 a {
-    font-family:"neuropol x rg", "Gasalt";
+    font-family:"Neuropol-X-Free","Gasalt";
     text-decoration: none;
     color: black;
-		width: 100%;
+		width: 400px;
 		height: 100%;
 }
 
@@ -91,7 +108,23 @@ a:hover {
     color: #ffffff;
     cursor: pointer;
 }
-
+.betterbutton{
+	background-color: #d6f440;
+	width: 250px;
+	line-height: 50px;
+	border-radius: 5px;
+	border-style: none;
+	font-size: 20px;
+	z-index: 100;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+.betterbutton:hover{
+	background-color: #864cbf;
+	color: white;
+}
 h3{
 margin-left: 10px;
 margin-bottom: 5px;
@@ -99,7 +132,9 @@ font-family:"Gasalt";
 font-size: 25px;
 
 }
-
+ul{
+	padding:0px;
+}
 button {
     background-color: #d6f440;
     width: 400px;
@@ -199,7 +234,7 @@ p{
     background-color:#d6f440;
     color:black;
     font-family: 'Neuropol-X-Free';
-    width:20%;
+    width:250px;
     font-size:28px;
     text-align: center;
     border:dashed purple 2px;
@@ -220,20 +255,20 @@ p{
     z-index:-1;
 }
 .leaderboard td{
-    font-size: 30px;
-    width:5%;
-    height:98px;
+    font-size: 35px;
+    width: 5%;
+    height:46px;
     font-family:"Gasalt";
     text-align:center;
     border-bottom: dashed #864bdf 2px;
     border-width:2px;
 }
+.een td{
+	text-align: right;
+}
 .leaderboard{
     margin:0 auto;
     width:90%;
-}
-.num5 td{
-	border-style: none;
 }
 
 .leaderboard .stars{
@@ -280,7 +315,7 @@ input[type="submit"] {
     margin: 0 auto;
     position: relative;
     margin-top: 5px;
-    font-family:"neuropol x rg";
+    font-family:"Neuropol-X-Free";
 }
 
 input[type="submit"]:hover{
