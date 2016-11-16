@@ -1,6 +1,6 @@
 <?php
-session_start();
 ob_start();
+session_start();
 //Requiring the database connection
 require_once 'config/config.php';
 require_once 'config/dbconnect.php';
