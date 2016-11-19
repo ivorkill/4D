@@ -12,6 +12,6 @@ Voor de [Mobile versie](https://github.com/ivorkill/4D/tree/master/Mobile-views)
 Voor het scorebord word er `JSON` gebruikt om de data op te halen van de database, dat is the zien [hier](https://github.com/ivorkill/4D/blob/master/views/scoreboard.html) en de `ajax.php` [hier](https://github.com/ivorkill/4D/blob/master/models/ajax.php).
 
 
-Developers:  Anton Kritikos en Dave van Rossum
+##Developers:  Anton Kritikos en Dave van Rossum
 
-Vormgevers: Barbara Stolk, Damaris Burgess en Quinty Kemper
+##Vormgevers: Barbara Stolk, Damaris Burgess en Quinty Kemper
