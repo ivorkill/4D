@@ -7,7 +7,9 @@ Om te kunnen kijken of de bezoeker op een mobiel zit of op een computer gebruike
 
 De mobile versie en de scorebord zijn gemaakt door Anton Kritikos en de desktop versie is gemaakt door Dave van Rossum.
 
+
 Voor de [Mobile versie](https://github.com/ivorkill/4D/tree/master/Mobile-views) (waar aleen beoordeeld op kan worden) maken we gebruik van een [qr-scanner](https://github.com/ivorkill/4D/blob/master/Mobile-views/js/webcodecamjs.js).
+
 
 Voor het scorebord word er `JSON` gebruikt om de data op te halen van de database, dat is the zien [hier](https://github.com/ivorkill/4D/blob/master/views/scoreboard.html) en de `ajax.php` [hier](https://github.com/ivorkill/4D/blob/master/models/ajax.php).
 
